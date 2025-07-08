@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: Contact
 permalink: /pages/contact/
@@ -40,4 +40,4 @@ permalink: /pages/contact/
       <button type="submit">Send Message</button>
     </form>
   </div>
-</div>
+</div> -->

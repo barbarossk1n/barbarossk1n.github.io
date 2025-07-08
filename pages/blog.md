@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: Blog
 permalink: /pages/blog/
@@ -26,4 +26,4 @@ permalink: /pages/blog/
     </div>
     {% endfor %}
   </div>
-</div>
+</div> -->

@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: Projects
 permalink: /pages/projects/
@@ -131,4 +131,4 @@ permalink: /pages/projects/
       
     </div>
   </div>
-</div>
+</div> -->

@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: About Me
 permalink: /pages/about/
@@ -88,4 +88,4 @@ permalink: /pages/about/
       <a href="{{ '/downloads/resume.pdf' | relative_url }}" class="hero-cta" style="display: inline-block;">Download Resume (PDF)</a>
     </p>
   </div>
-</div>
+</div> -->
