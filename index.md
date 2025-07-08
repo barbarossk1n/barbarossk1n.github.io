@@ -3,13 +3,13 @@ layout: default
 title: Home
 ---
 
-<section class="hero">
+<!-- <section class="hero">
   <div class="hero-content">
     <h1 class="hero-title">{{ site.data.home.hero.title }}</h1>
     <p class="hero-subtitle">{{ site.data.home.hero.subtitle }}</p>
     <a href="{{ '/pages/projects' | relative_url }}" class="hero-cta">{{ site.data.home.hero.cta_text }}</a>
   </div>
-</section>
+</section> -->
 
 <section class="section">
   <div class="container">
