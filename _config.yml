@@ -1,13 +1,11 @@
 # Site settings
-title: Quant Developer Portfolio
+title: Portfolio
 email: your.email@example.com
 description: >-
-  Portfolio website showcasing my work as a Quantitative Developer
-  specializing in financial algorithms and trading strategies.
+  Portfolio website showcasing my skills and interests.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://barbarossk1n.github.io" # the base hostname & protocol
 github_username: barbarossk1n
-linkedin_username: yourlinkedinprofile
 
 # Build settings
 markdown: kramdown
