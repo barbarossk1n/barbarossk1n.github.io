@@ -4,8 +4,8 @@ hero:
   cta_text: "View My Projects"
 
 about:
-  text: "I am a quantitative developer specializing in [financial markets/algorithmic trading/risk management]. With a background in [mathematics/physics/computer science/finance], I combine strong analytical skills with software engineering expertise to develop robust quantitative solutions."
-  link_text: "Learn more about me →"
+  text: "---"
+  link_text: "More about my background →"
 
 skills:
   programming:
