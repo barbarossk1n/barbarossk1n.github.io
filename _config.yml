@@ -1,42 +1,42 @@
-# Site settings
-title: Portfolio
-email: your.email@example.com
-description: >-
-  Portfolio website showcasing my skills and interests.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://barbarossk1n.github.io" # the base hostname & protocol
-github_username: barbarossk1n
+# # Site settings
+# title: Portfolio
+# email: your.email@example.com
+# description: >-
+#   Portfolio website showcasing my skills and interests.
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "https://barbarossk1n.github.io" # the base hostname & protocol
+# github_username: barbarossk1n
 
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
+# # Build settings
+# markdown: kramdown
+# theme: minima
+# plugins:
+#   - jekyll-feed
+#   - jekyll-seo-tag
+#   - jekyll-sitemap
 
-# Collections
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
+# # Collections
+# collections:
+#   projects:
+#     output: true
+#     permalink: /projects/:path/
 
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+# # Defaults
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "posts"
+#     values:
+#       layout: "post"
+#   - scope:
+#       path: ""
+#       type: "projects"
+#     values:
+#       layout: "project"
+#   - scope:
+#       path: ""
+#     values:
+#       layout: "default"
 
-# Google Analytics
-google_analytics: UA-XXXXXXXX-X
+# # Google Analytics
+# google_analytics: UA-XXXXXXXX-X
