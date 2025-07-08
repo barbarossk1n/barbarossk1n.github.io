@@ -5,9 +5,9 @@ title: Home
 
 <section class="hero">
   <div class="hero-content">
-    <h1 class="hero-title">Quant Developer</h1>
-    <p class="hero-subtitle">Specializing in financial algorithms, trading strategies, and quantitative analysis</p>
-    <a href="{{ '/pages/projects' | relative_url }}" class="hero-cta">View My Projects</a>
+    <h1 class="hero-title">{{ site.data.home.hero.title }}</h1>
+    <p class="hero-subtitle">{{ site.data.home.hero.subtitle }}</p>
+    <a href="{{ '/pages/projects' | relative_url }}" class="hero-cta">{{ site.data.home.hero.cta_text }}</a>
   </div>
 </section>
 
@@ -17,8 +17,8 @@ title: Home
       <h2>About Me</h2>
     </div>
     <div class="about-content">
-      <p>I am a quantitative developer specializing in [financial markets/algorithmic trading/risk management]. With a background in [mathematics/physics/computer science/finance], I combine strong analytical skills with software engineering expertise to develop robust quantitative solutions.</p>
-      <p><a href="{{ '/pages/about' | relative_url }}">Learn more about me →</a></p>
+      <p>{{ site.data.home.about.text }}</p>
+      <p><a href="{{ '/pages/about' | relative_url }}">{{ site.data.home.about.link_text }}</a></p>
     </div>
   </div>
 </section>
@@ -32,28 +32,25 @@ title: Home
       <div class="skill-category">
         <h3>Programming Languages</h3>
         <ul>
-          <li>Python</li>
-          <li>C++</li>
-          <li>R</li>
-          <li>SQL</li>
+          {% for skill in site.data.home.skills.programming %}
+          <li>{{ skill }}</li>
+          {% endfor %}
         </ul>
       </div>
       <div class="skill-category">
         <h3>Quantitative Libraries</h3>
         <ul>
-          <li>NumPy, Pandas</li>
-          <li>SciPy, Statsmodels</li>
-          <li>QuantLib</li>
-          <li>Scikit-learn, TensorFlow</li>
+          {% for skill in site.data.home.skills.libraries %}
+          <li>{{ skill }}</li>
+          {% endfor %}
         </ul>
       </div>
       <div class="skill-category">
         <h3>Financial Knowledge</h3>
         <ul>
-          <li>Derivatives Pricing</li>
-          <li>Risk Models</li>
-          <li>Algorithmic Trading</li>
-          <li>Portfolio Optimization</li>
+          {% for skill in site.data.home.skills.financial %}
+          <li>{{ skill }}</li>
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -66,56 +63,24 @@ title: Home
       <h2>Featured Projects</h2>
     </div>
     <div class="projects-grid">
+      {% for project in site.data.home.featured_projects %}
       <div class="project-card">
-        <div class="project-image" style="background-image: url('{{ '/assets/images/project-thumbnails/project1.jpg' | relative_url }}');"></div>
+        <div class="project-image" style="background-image: url('{{ '/assets/images/project-thumbnails/' | append: project.image | relative_url }}');"></div>
         <div class="project-content">
-          <h3>Options Pricing Model</h3>
-          <p>Implementation of advanced options pricing models with calibration to market data.</p>
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
           <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">QuantLib</span>
-            <span class="tag">Derivatives</span>
+            {% for tag in project.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
           </div>
           <div class="project-links">
-            <a href="#"><i class="fab fa-github"></i> GitHub</a>
-            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+            <a href="{{ project.github_link }}"><i class="fab fa-github"></i> GitHub</a>
+            <a href="{{ project.demo_link }}"><i class="fas fa-external-link-alt"></i> Demo</a>
           </div>
         </div>
       </div>
-      
-      <div class="project-card">
-        <div class="project-image" style="background-image: url('{{ '/assets/images/project-thumbnails/project2.jpg' | relative_url }}');"></div>
-        <div class="project-content">
-          <h3>Portfolio Optimization</h3>
-          <p>Implementation of modern portfolio theory with various risk metrics and constraints.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">CVXPY</span>
-            <span class="tag">Finance</span>
-          </div>
-          <div class="project-links">
-            <a href="#"><i class="fab fa-github"></i> GitHub</a>
-            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="project-card">
-        <div class="project-image" style="background-image: url('{{ '/assets/images/project-thumbnails/project3.jpg' | relative_url }}');"></div>
-        <div class="project-content">
-          <h3>Trading Strategy Backtester</h3>
-          <p>A framework for backtesting trading strategies with realistic market conditions.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Pandas</span>
-            <span class="tag">Trading</span>
-          </div>
-          <div class="project-links">
-            <a href="#"><i class="fab fa-github"></i> GitHub</a>
-            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
     <div style="text-align: center; margin-top: 30px;">
       <a href="{{ '/pages/projects' | relative_url }}" class="hero-cta">View All Projects</a>
@@ -150,7 +115,7 @@ title: Home
       <h2>Contact Me</h2>
     </div>
     <div class="contact-content" style="text-align: center;">
-      <p>Interested in working together? Feel free to reach out!</p>
+      <p>{{ site.data.home.contact.text }}</p>
       <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
       <div style="margin-top: 20px;">
         <a href="{{ '/pages/contact' | relative_url }}" class="hero-cta">Contact Form</a>

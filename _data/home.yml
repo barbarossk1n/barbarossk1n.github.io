@@ -1,0 +1,57 @@
+hero:
+  title: "Quant Developer"
+  subtitle: "Specializing in financial algorithms, trading strategies, and quantitative analysis"
+  cta_text: "View My Projects"
+
+about:
+  text: "I am a quantitative developer specializing in [financial markets/algorithmic trading/risk management]. With a background in [mathematics/physics/computer science/finance], I combine strong analytical skills with software engineering expertise to develop robust quantitative solutions."
+  link_text: "Learn more about me →"
+
+skills:
+  programming:
+    - Python
+    - C++
+    - R
+    - SQL
+  libraries:
+    - NumPy, Pandas
+    - SciPy, Statsmodels
+    - QuantLib
+    - Scikit-learn, TensorFlow
+  financial:
+    - Derivatives Pricing
+    - Risk Models
+    - Algorithmic Trading
+    - Portfolio Optimization
+
+featured_projects:
+  - title: "Options Pricing Model"
+    description: "Implementation of advanced options pricing models with calibration to market data."
+    image: "project1.jpg"
+    tags:
+      - Python
+      - QuantLib
+      - Derivatives
+    github_link: "#"
+    demo_link: "#"
+  - title: "Portfolio Optimization"
+    description: "Implementation of modern portfolio theory with various risk metrics and constraints."
+    image: "project2.jpg"
+    tags:
+      - Python
+      - CVXPY
+      - Finance
+    github_link: "#"
+    demo_link: "#"
+  - title: "Trading Strategy Backtester"
+    description: "A framework for backtesting trading strategies with realistic market conditions."
+    image: "project3.jpg"
+    tags:
+      - Python
+      - Pandas
+      - Trading
+    github_link: "#"
+    demo_link: "#"
+
+contact:
+  text: "Interested in working together? Feel free to reach out!"
