@@ -11,7 +11,7 @@ title: Home
   </div>
 </section> -->
 
-<section class="section">
+<!-- <section class="section">
   <div class="container">
     <div class="section-title">
       <h2>About Me</h2>
@@ -122,4 +122,4 @@ title: Home
       </div>
     </div>
   </div>
-</section>
+</section> -->
